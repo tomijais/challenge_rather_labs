@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "7cfdff89-ad5f-4fdf-9c73-8bf8dd72463c",
+		"name": "RatherLabsChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21994965"
+	},
+	"item": [
+		{
+			"name": "getTips",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/?pair=BTCUSD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "pair",
+							"value": "BTCUSD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pair",
+							"value": "ETHUSD",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "buy",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
