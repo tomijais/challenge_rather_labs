@@ -7,7 +7,7 @@ Ejecutar los siguiente comando para levantar la app
 * `npm run start`
 
 
-Ante todo agradecerles por tomarse el tiempo, trate de mantener todo _lo mas simple posible_, ademas queria contarles que actualmente estoy de vacaciones asi que tuve algunas dificultades con el internet con lo que trabajaba con la minima cantidad de paquetes posibles y sumado a la falta de tiempo escribo mas abajo diferentes cambios que le vendrian bien al codigo
+Ante todo agradecerles por tomarse el tiempo, trate de mantener todo _lo mas simple posible_, ademas queria contarles que actualmente estoy de vacaciones y tuve dificultades con el internet con lo que trabajaba con la minima cantidad de paquetes posibles y sumado a la falta de tiempo escribo mas abajo diferentes cambios que le vendrian bien al codigo
 
 
 1. En el primer endpoint se deberia trabajar con el array de primeros datos que me da el libro, actualmente se esta ignorando
