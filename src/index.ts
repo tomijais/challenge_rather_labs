@@ -1,7 +1,18 @@
 import express from "express";
+require('dotenv').config()
+
 import { index } from "./routes";
+
+
 const app = express();
-const port = 8080; // default port to listen
+const port = process.env.PORT || 8080; // default port to listen
+
+
+// middleware to read body, parse it and place results in req.body
+app.use(express.json());             // for application/json
+app.use(express.urlencoded());       // for application/x-www-form-urlencoded
+
+
 
 // define a route handler for the default home page
 
