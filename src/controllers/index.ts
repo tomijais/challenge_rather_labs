@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import ws from "ws";
 import axios from "axios";
 import { Server } from "socket.io";
-import { AvgPriceI } from "../interfaces/avg-price";
+import { AvgPriceDTO } from "../dto/avg-price";
 import { OrderBook } from "../interfaces/order-book";
 import { checkPair } from "../helpers/check-pairs";
 
@@ -88,7 +88,7 @@ const getBooks = async (
 };
 
 export const avgPrice = async (req: Request, res: Response) => {
-  const payload: AvgPriceI = req.body;
+  const payload: AvgPriceDTO = req.body;
 
   checkPair(payload.pair.toString());
 
