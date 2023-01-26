@@ -3,4 +3,6 @@ import * as controller from "../controllers/index";
 
 export const index = Router();
 
-index.get("/", controller.index);
+index.get("/", controller.getTips);
+
+index.post("/", controller.avgPrice)
